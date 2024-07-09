@@ -9,12 +9,12 @@ pipeline {
         echo 'main branch'
       }
     }
-    stage('for stage branch') {
+    stage('for DEVELOP branch') {
       when {
-        branch 'stage'
+        branch 'develop'
       }
       steps {
-        echo 'stage branch'
+        echo 'OCO develop branch'
       }
     }
     stage('for pull request') {
